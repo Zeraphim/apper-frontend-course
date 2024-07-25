@@ -648,6 +648,7 @@ nav {
 
 /* Footer */
 footer {
+    position:relative;
     background-color: #333;
     color: white;
     height: 6vh;
@@ -665,7 +666,14 @@ footer {
     border: 3px solid green;
 }
 
-footer>* {
+
+footer>.footer-contact,
+footer>.footer-about,
+footer>.footer-news,
+footer>.footer-twitch,
+footer>.footer-help,
+footer>.footer-privacy,
+footer>.footer-eula {
     height: 100%;
     max-width: 30%;
     /* BG Color for debugging */
@@ -680,4 +688,28 @@ footer>* {
     justify-content: center;
 
     border: 3px solid red;
+}
+
+.footer-socials {
+    position: absolute;
+    right: 0rem;
+    height: 100%;
+    max-width: 30%;
+    /* BG Color for debugging */
+    /* background-color: #283eff; */
+    text-align: center;
+    padding: 10px;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid red;
+}
+
+.footer-socials>* {
+    padding: 0.5rem;
+    border: 3px solid orange;
 }
