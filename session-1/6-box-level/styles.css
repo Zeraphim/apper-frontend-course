@@ -28,6 +28,8 @@ nav {
     align-items: center;
     justify-items: center;
     flex-wrap: wrap;
+
+    border: 3px solid green;
 }
 
 /* Navbar Logo Menu */
@@ -47,7 +49,8 @@ nav {
 .logo {
     height: 100%;
     max-width: 30%;
-    background-color: #69689c;
+    /* BG Color for debugging */
+    /* background-color: #69689c; */
     flex: 32%;
     text-align: center;
 
@@ -96,7 +99,8 @@ nav {
 .right-side > *{
     height: 100%;
     max-width: 30%;
-    background-color: #283eff;
+    /* BG Color for debugging */
+    /* background-color: #283eff; */
     text-align: center;
     padding: 10px;
 
@@ -120,8 +124,8 @@ nav {
 /* Hero */
 .hero {
     background-color: rgb(15, 16, 48);
-    height: 120vh;
-    max-height: 120vh;
+    height: 110vh;
+    max-height: 110vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -131,15 +135,17 @@ nav {
     align-items: center;
     justify-items: center;
     flex-wrap: wrap;
+
+    border: 3px solid yellow;
 }
 
-.title-container {
+.hero-title-container {
     /* BG Color for debugging */
     /* background-color: rgb(85, 45, 13); */
     height: 100%;
     width: 100%;
     flex: 50%;
-    padding-bottom: 3.5rem;
+    padding-bottom: 8rem;
 
     display: flex;
     flex-direction: column;
@@ -167,13 +173,13 @@ nav {
     border: 3px solid red;
 }
 
-.bottom-container {
+.hero-bottom-container {
     /* BG Color for debugging */
     /* background-color: rgb(9, 28, 56); */
     height: 100%;
     width: 100%;
     flex: 50%;
-    padding-top: 8.5rem;
+    padding-top: 7rem;
 
     display: flex;
     flex-direction: column;
@@ -290,12 +296,57 @@ nav {
 
 
 /* Features */
-.features {
-    background-color: rgb(74, 125, 236);
+.features-container {
+    background-color: #08202D;
     height: 30vh;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 3rem 9rem 5rem;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    border: 3px solid #FE8500;
+}
+
+.features-container>.features-infinite,
+.features-container>.features-story,
+.features-container>.features-multiplayer,
+.features-container>.features-subtitle,
+.features-container>.features-vr,
+.features-container>.features-beyond {
+    background-color: #503921;
+    min-height: 100%;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    flex: 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    gap: 1rem;
+
+    border: 3px solid red;
+}
+
+.features-title {
+    font-size: 1.8rem;
+
+    border: 3px solid orange;
+}
+
+.features-subtitle {
+    font-size: 1rem;
+
+    border: 3px solid orange;
 }
 
 .feature-highlight-one {
