@@ -16,7 +16,7 @@ html {
 
 /* Navbar */
 nav {
-    background-color: #333;
+    background-color: #000101;
     color: white;
     height: 6vh;
     width: 100%;
@@ -107,7 +107,6 @@ nav {
     border: 3px solid red;
 }
 
-/* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
 @media (max-width: 800px) {
 
     .flex-item-right,
@@ -121,13 +120,176 @@ nav {
 /* Hero */
 .hero {
     background-color: rgb(241, 146, 146);
-    height: 94vh;
-    max-height: 100vh;
+    height: 120vh;
+    max-height: 120vh;
     width: 100%;
     margin: 0;
     padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
 }
 
+.title-container {
+    /* BG Color for debugging */
+    /* background-color: rgb(85, 45, 13); */
+    height: 100%;
+    width: 100%;
+    flex: 50%;
+    padding-bottom: 3.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    max-height: 20%;
+    max-width: 50%;
+    background-color: #69689c;
+    flex: 32%;
+    text-align: center;
+    padding: 2rem;
+
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid red;
+}
+
+.bottom-container {
+    /* BG Color for debugging */
+    background-color: rgb(9, 28, 56);
+    height: 100%;
+    width: 100%;
+    flex: 50%;
+    padding-top: 8.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 0.2rem;
+}
+
+/* Buy Now Text */
+.buy-container {
+    max-height: 20%;
+    max-width: 50%;
+    /* BG Color for debugging */
+    /* background-color: #69689c; */
+    text-align: center;
+    padding: 1rem;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+
+    border: 3px solid red;
+}
+
+.buy-now-text {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+
+    border: 3px solid orange;
+}
+
+.all-platforms-text {
+    /* BG Color for debugging */
+    /* background-color: green; */
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    padding: 0.2rem;
+
+    border: 3px solid orange;
+}
+
+/* Platforms PS5 - Switch */
+
+.platforms-container {
+    max-height: 100%;
+    max-width: 30%;
+    /* BG Color for debugging */
+    /* background-color: #1b7e79; */
+    text-align: center;
+    padding: 0.5rem;
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    gap: 0.5rem;
+    border: 3px solid red;
+}
+
+.platforms-container>.ps4,
+.platforms-container>.ps5,
+.platforms-container>.steam,
+.platforms-container>.xbox-one,
+.platforms-container>.xs,
+.platforms-container>.game-pass,
+.platforms-container>.mac,
+.platforms-container>.switch {
+    background-color: #FE8500;
+    text-align: center;
+    padding: 0.5rem;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.2rem;
+}
+
+.platforms-container>.ps4>*,
+.platforms-container>.ps5>*,
+.platforms-container>.steam>*,
+.platforms-container>.xbox-one>*,
+.platforms-container>.xs>*,
+.platforms-container>.game-pass>*,
+.platforms-container>.mac>*,
+.platforms-container>.switch>* {
+    font-size: 1.1rem;
+    border: 3px solid red;
+}
+
+.purchase-options-text {
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 0.1rem;
+    color: white;
+    border: 3px solid red;
+
+    display:flex;
+    align-items: start;
+    justify-items: start;
+}
+
+
+/* Features */
 .features {
     background-color: rgb(74, 125, 236);
     height: 30vh;
