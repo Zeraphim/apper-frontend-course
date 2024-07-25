@@ -119,7 +119,7 @@ nav {
 
 /* Hero */
 .hero {
-    background-color: rgb(241, 146, 146);
+    background-color: rgb(15, 16, 48);
     height: 120vh;
     max-height: 120vh;
     width: 100%;
@@ -169,7 +169,7 @@ nav {
 
 .bottom-container {
     /* BG Color for debugging */
-    background-color: rgb(9, 28, 56);
+    /* background-color: rgb(9, 28, 56); */
     height: 100%;
     width: 100%;
     flex: 50%;
@@ -204,7 +204,7 @@ nav {
 
 .buy-now-text {
     font-size: 1.5rem;
-    padding: 0.2rem;
+    padding: 0.1rem;
 
     border: 3px solid orange;
 }
@@ -215,7 +215,7 @@ nav {
     font-size: 1rem;
     letter-spacing: 0.2rem;
     word-spacing: 0.5rem;
-    padding: 0.2rem;
+    padding: 0.1rem;
 
     border: 3px solid orange;
 }
