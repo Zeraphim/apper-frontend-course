@@ -2,15 +2,19 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Century Gothic', sans-serif;
 }
 
 html {
-    background-color: rgb(33, 33, 33);
     max-width: 100vw;
     max-height: 100vh;
-    display: sticky;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+/* Navbar */
 nav {
     background-color: #333;
     color: white;
@@ -18,8 +22,103 @@ nav {
     width: 100%;
     position: sticky;
     top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
 }
 
+/* Navbar Logo Menu */
+.left-side {
+    height: 100%;
+    /* BG Color for debugging */
+    /* background-color: #2a26ec; */
+    flex: 50%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: start;
+    gap: 15px;
+}
+
+.logo {
+    height: 100%;
+    max-width: 30%;
+    background-color: #69689c;
+    flex: 32%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid red;
+}
+
+.menu {
+    height: 100%;
+    max-width: 5%;
+    /* BG Color for debugging */
+    /* background-color: #2a26ec; */
+    text-align: center;
+    flex: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-text {
+    border: 3px solid red;
+    padding: 3px;
+}
+
+/* Navbar Right Side */
+.right-side {
+    height: 100%;
+    /* BG Color for debugging */
+    /* background-color: dodgerblue; */
+    padding: 6px;
+    padding-right: 30px;
+    flex: 50%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+/* Child of right side */
+.right-side > *{
+    height: 100%;
+    max-width: 30%;
+    background-color: #283eff;
+    text-align: center;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid red;
+}
+
+/* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
+@media (max-width: 800px) {
+
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+    }
+}
+
+
+
+/* Hero */
 .hero {
     background-color: rgb(241, 146, 146);
     height: 94vh;
