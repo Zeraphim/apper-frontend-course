@@ -499,12 +499,112 @@ nav {
 
 /* Updates */
 .updates {
-    background-color: rgb(255, 156, 75);
-    height: 57vh;
+    background-color: #101E27;
+    height: 55vh;
+    max-height: 55vh;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 5rem 6rem 7rem;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    border: 3px solid #FE8500;
 }
+
+/* Updates Info Container */
+.updates-info-container {
+    /* BG Color for debugging */
+    /* background-color: #08202D; */
+    height: 70%;
+    width: 50%;
+    margin: 0;
+    padding: 1rem 2.5rem 1rem 1rem;
+
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    border: 3px solid red;
+}
+
+.info-title {
+    font-size: 3rem;
+
+    border: 3px solid orange;
+}
+
+/* Updates List Container */
+.updates-list-container {
+    min-height: 80%;
+    max-height: 100%;
+    max-width: 100%;
+    /* BG Color for debugging */
+    /* background-color: #1b7e79; */
+    text-align: center;
+    padding: 3rem 0rem 3rem;
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    gap: 1rem;
+    border: 3px solid red;
+}
+
+.updates-list-container>.update-one,
+.updates-list-container>.update-two,
+.updates-list-container>.update-three,
+.updates-list-container>.update-four {
+    /* BG Color for debugging */
+    /* background-color: #FE8500; */
+    text-align: center;
+    padding: 1rem 6rem 1rem;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+
+    border: 3px solid red;
+}
+.updates-list-container>.update-one>*,
+.updates-list-container>.update-two>*,
+.updates-list-container>.update-three>*,
+.updates-list-container>.update-four>* {
+    font-size: 1.1rem;
+    border: 3px solid orange;
+}
+
+.update-title {
+    font-size: 1.5rem;
+}
+
+.update-subtitle {
+    font-size: 1rem;
+}
+
 
 /* Footer */
 footer {
