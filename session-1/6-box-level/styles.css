@@ -157,7 +157,8 @@ nav {
 .title {
     max-height: 20%;
     max-width: 50%;
-    background-color: #69689c;
+    /* BG Color for debugging */
+    /* background-color: #69689c; */
     flex: 32%;
     text-align: center;
     padding: 2rem;
@@ -190,7 +191,7 @@ nav {
 
 /* Buy Now Text */
 .buy-container {
-    max-height: 20%;
+    max-height: 23%;
     max-width: 50%;
     /* BG Color for debugging */
     /* background-color: #69689c; */
@@ -234,7 +235,7 @@ nav {
     /* BG Color for debugging */
     /* background-color: #1b7e79; */
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.2rem;
 
     color: white;
 
@@ -257,9 +258,10 @@ nav {
 .platforms-container>.game-pass,
 .platforms-container>.mac,
 .platforms-container>.switch {
-    background-color: #FE8500;
+    /* BG Color for debugging */
+    /* background-color: #FE8500; */
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.15rem;
 
 
     display: flex;
@@ -268,6 +270,8 @@ nav {
     justify-content: center;
 
     gap: 0.2rem;
+
+    border: 3px solid #FE8500;
 }
 
 .platforms-container>.ps4>*,
