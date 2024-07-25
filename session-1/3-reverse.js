@@ -5,16 +5,27 @@ Write a function named reverse that, when given an input string, returns the rev
 */
 
 function reverse(word) {
-    // String var to place all of the reversed characters
-    let reversed = '';
+    try {
+        // If word is not a string then return an error
+        if (typeof word !== 'string') {
+            throw new TypeError('Input must be a string');
+        }
 
-    // Loop through the word from the last character to the first character
-    for (let iterator = word.length - 1; iterator >= 0; iterator--) {
-        // Concatenate the characters to the reversed variable
-        reversed += word[iterator];
+        // String var to place all of the reversed characters
+        let reversed = '';
+
+        // Loop through the word from the last character to the first character
+        for (let iterator = word.length - 1; iterator >= 0; iterator--) {
+            // Concatenate the characters to the reversed variable
+            reversed += word[iterator];
+        }
+
+        return reversed;
+
+    } catch (error) {
+        // If there's an error, log the error message to the console
+        console.error('Error:', error.message);
     }
-    
-    return reversed;
 }
 
 const word = 'hello'
