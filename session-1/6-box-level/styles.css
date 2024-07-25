@@ -637,7 +637,7 @@ nav {
 
 .update-subtitle {
     font-size: 1rem;
-    
+
     border: 3px solid orange;
 }
 
@@ -653,4 +653,31 @@ footer {
     height: 6vh;
     width: 100%;
     bottom: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 1.6rem;
+
+    border: 3px solid green;
+}
+
+footer>* {
+    height: 100%;
+    max-width: 30%;
+    /* BG Color for debugging */
+    /* background-color: #283eff; */
+    text-align: center;
+    padding: 10px;
+
+    word-spacing: 0.5rem;;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid red;
 }
