@@ -409,16 +409,47 @@ nav {
 }
 
 .feature-highlight-four {
-    background-color: rgb(255, 111, 111);
+    background-color: #65543C;
     height: 100vh;
+    max-height: 100vh;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 5rem 6rem 7rem;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    align-items: end;
+    gap: 2rem;
+
+    border: 3px solid #FE8500;
 }
 
 /* Single Features Title, Subtitle, and Description */
 
 .single-feature-container {
+    /* BG Color for debugging */
+    /* background-color: #08202D; */
+    height: fit-content;
+    width: 30%;
+    margin: 0;
+    padding: 1rem 2.5rem 1rem 1rem;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    align-items: start;
+    gap: 1.5rem;
+
+    border: 3px solid red;
+}
+
+.single-feature-container-community {
     /* BG Color for debugging */
     /* background-color: #08202D; */
     height: fit-content;
@@ -457,6 +488,16 @@ nav {
     border: 3px solid orange;
 }
 
+.community-button {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    padding: 0.5rem;
+    word-spacing: 0.2rem;
+
+    border: 3px solid red;
+}
+
+/* Updates */
 .updates {
     background-color: rgb(255, 156, 75);
     height: 57vh;
@@ -465,6 +506,7 @@ nav {
     padding: 0;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
