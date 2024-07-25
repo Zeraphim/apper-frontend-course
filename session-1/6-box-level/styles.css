@@ -390,11 +390,22 @@ nav {
 }
 
 .feature-highlight-three {
-    background-color: rgb(108, 255, 235);
+    background-color: #1E6563;
     height: 100vh;
+    max-height: 100vh;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 5rem 8rem 7rem;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    align-items: end;
+    gap: 2rem;
+
+    border: 3px solid #FE8500;
 }
 
 .feature-highlight-four {
@@ -413,7 +424,7 @@ nav {
     height: fit-content;
     width: 30%;
     margin: 0;
-    padding: 1rem 1.9rem 1rem 1.7rem;
+    padding: 1rem 2.5rem 1rem 1rem;
 
     color: white;
 
