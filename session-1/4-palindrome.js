@@ -5,7 +5,26 @@ Write a function called isPalindrome, that when given a string input, returns Tr
 */
 
 function isPalindrome(word) {
-  // ... some logic here
+
+    try {
+        // If word is not a string then return an error
+        if (typeof word !== 'string') {
+            throw new TypeError('Input must be a string');
+        }
+
+        // Variable to store the reversed letters in the word
+        const reversedWord = word.split('').reverse().join('');
+
+        return word === reversedWord;
+
+    } catch (error) {
+
+        // If there are errors then show the error in the log
+        console.error(error.message);
+        
+        return false;
+
+    }
 }
 
 const word = 'racecar'
